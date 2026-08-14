@@ -683,6 +683,41 @@ body.modal-open {
 .item:hover .subtitle {
     color: #CC2A1F;
 }
+/* Small Desktop */
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    .top {
+        gap: 40px;
+        padding: 70px 60px;
+    }
+
+    .topleft {
+        width: 38%;
+        min-width: 0;
+    }
+
+    .topright {
+        width: calc(62% - 40px);
+        min-width: 0;
+    }
+
+    .topleft h1 {
+        font-size: clamp(38px, 4.3vw, 55px);
+        letter-spacing: 5px;
+        margin-left: 0;
+    }
+
+    .year {
+        margin-left: 0;
+    }
+
+    .topright img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
 
 /* =========================
    Mobile
@@ -703,11 +738,7 @@ body.modal-open {
 
     .logo img {
         width: 38px;
-    }
-
-    @media (max-width: 768px) {
-
-    /* 你原本其他手機版 CSS 全部保留 */
+    }  
 
     nav {
         margin-left: auto;
@@ -745,7 +776,7 @@ body.modal-open {
         font-size: 16px;
         letter-spacing: 3px;
     }
-}
+
 
     main {
         padding-top: 70px;
