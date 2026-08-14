@@ -258,3 +258,36 @@ menuLinks.forEach(link => {
         menu.classList.remove("open");
     });
 });
+
+let weekendPlayer;
+
+function onYouTubeIframeAPIReady() {
+    weekendPlayer = new YT.Player("weekend-vlog", {
+        videoId: "oigzFL-WmE4",
+
+        playerVars: {
+            autoplay: 0,
+            controls: 0,
+            mute: 1,
+            loop: 1,
+            playlist: "oigzFL-WmE4",
+            playsinline: 1,
+            rel: 0
+        }
+    });
+}
+
+const youtubeItem = document.querySelector(".youtube-item");
+
+youtubeItem.addEventListener("mouseenter", () => {
+    if (weekendPlayer && weekendPlayer.playVideo) {
+        weekendPlayer.mute();
+        weekendPlayer.playVideo();
+    }
+});
+
+youtubeItem.addEventListener("mouseleave", () => {
+    if (weekendPlayer && weekendPlayer.pauseVideo) {
+        weekendPlayer.pauseVideo();
+    }
+});
