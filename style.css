@@ -949,6 +949,26 @@ body.modal-open {
         font-size: 11px;
         padding: 10px 20px;
     }
+    .bottom-left img {
+    width: 60px;
+    height: 70px;
+}
+
+    .bottom {
+    width: 100%;
+    text-align: center;
+}
+
+    .bottomyear {
+    margin: 0 0 25px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.bottomline {
+    flex: 0 0 60px;
+    margin: 0 15px;
+}
 }
 
 .image-modal-prev,
