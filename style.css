@@ -54,20 +54,7 @@ main
     display: none;
 }
 
-.logo img {
-    animation: logoRotate 8s linear infinite;
-    transform-origin: center;
-}
 
-@keyframes logoRotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .top {
     display: flex;
@@ -1082,3 +1069,17 @@ body.modal-open {
     transform: scale(1.02);
 }
 
+.logo img {
+    animation: logoRotate 8s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes logoRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

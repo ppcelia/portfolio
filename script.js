@@ -1,7 +1,3 @@
-// ==============================
-// 圖片放大功能（Modal / Lightbox）
-// 單張圖片 + 多張 Gallery
-// ==============================
 
 const modal = document.getElementById("imageModal");
 
