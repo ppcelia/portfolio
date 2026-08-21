@@ -1,5 +1,4 @@
 
-
 body {
     margin: 0;
     border-top: 7px solid #CC2A1F;
@@ -7,7 +6,7 @@ body {
 }
 /*menu&main*/
 
- header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -53,6 +52,21 @@ main
 
 .menu-toggle {
     display: none;
+}
+
+.logo img {
+    animation: logoRotate 8s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes logoRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .top {
@@ -1067,3 +1081,4 @@ body.modal-open {
 .youtube-item:hover .youtube-video {
     transform: scale(1.02);
 }
+
